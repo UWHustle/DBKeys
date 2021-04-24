@@ -8,7 +8,7 @@
 #include "../common/macros.h"
 
 #define INT32_T_MAX 2147483647
-#define min(a,b) (((a)<(b))?(a):(b))
+#define min(a, b) (((a)<(b))?(a):(b))
 
 void init_rando_gen() {
   srand(42 /* magic constant */);
@@ -74,7 +74,7 @@ int aggregation_kernel(int input_size,
 
   // Helpers
   int next_group_id = 0;
-  map* hashmap = newMap(no_unique_groups);
+  map *hashmap = newMap(no_unique_groups);
 
   for (int i = 0; i < input_size; i++) {
     int g_val = group_column->data[i];

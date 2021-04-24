@@ -1,5 +1,5 @@
-#ifndef HUSTLE_APPS_HUSTLE_APPS_SSB_STRUCTS_H_
-#define HUSTLE_APPS_HUSTLE_APPS_SSB_STRUCTS_H_
+#ifndef DBKEYS_COMMON_STRUCTS_H_
+#define DBKEYS_COMMON_STRUCTS_H_
 
 #define MAPSIZE 4096
 #define LISTNODESIZE 12
@@ -140,4 +140,4 @@ void group_joinkeys_delete(group_joinkeys *g);
 
 void copy_string(char *s, char **d);
 
-#endif //HUSTLE_APPS_HUSTLE_APPS_SSB_STRUCTS_H_
+#endif //DBKEYS_COMMON_STRUCTS_H_
