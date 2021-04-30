@@ -55,6 +55,7 @@ GROUP BY Major
 What are good ranges for the aggregation parameters?
 
 Input Size: 0 - 100*10^6.
+
 #Unique Groups: 100-(Input Size)/2
 
 Note: These values ranges are a good startting point. Of course our initial experiments do not have to scale to inputs with 100M rows. We can start with small inputs < 10M and examine the cases of interest for each acceleerator. For example, for CAPE we considered a few cases; the entire input fits in the associative memory, the input fits in a CPU cache (best cache for our competitor), the input is many times larger than the associative memory. We similarly varied the #unique groups; the groups fit in the associative memory, the cpu cache, many times larger than both.
