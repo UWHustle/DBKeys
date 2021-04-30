@@ -52,7 +52,7 @@ GROUP BY Major
 | Input Size       |   > 0             |
 | #Unique Groups   |   [1, Input Size] |
 
-What are good ranges for the aggregation parameters?
+#### What are good ranges for the aggregation parameters?
 
 Input Size: 0 - 100*10^6.
 
