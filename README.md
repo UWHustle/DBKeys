@@ -85,3 +85,6 @@ Execute the join microbenchmark:
 ```
 ./dbkeys join <fact table size> <dimension table size>
 ```
+
+## TODO
+- Discuss how to do verification of results
