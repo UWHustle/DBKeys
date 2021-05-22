@@ -11,11 +11,14 @@ all: dbkeys
 
 CHEADERS=common/structs.h \
 		 common/time.h \
+		 common/data_generators.h \
 		 c_kernels/c_kernels.h
 
 CSOURCES=common/time.c \
 		 common/structs.c \
-         c_kernels/aggregation_kernel.c
+		 common/data_generators.c \
+         c_kernels/aggregation_kernel.c \
+         c_kernels/join_kernel.c
 
 
 #############################################################################

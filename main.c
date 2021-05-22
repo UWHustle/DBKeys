@@ -11,10 +11,17 @@ int run_microbenchmark(int argc, char** argv) {
   if (strcmp(ub_id, "agg") == 0) {
     if (argc != 3) {
       printf("Agg benchmark id requires 2 parameters. Usage:"
-             " dbkeys ub agg input_size #unique_groups\n");
+             " dbkeys agg input_size #unique_groups\n");
       return -1;
     }
     aggregation_kernel(atoi(argv[1]), atoi(argv[2]));
+  } else if (strcmp(ub_id, "join") == 0) {
+    if (argc != 3) {
+      printf("Join benchmark id requires 2 parameters. Usage:"
+             " dbkeys join fact_relation_size dimension_relation_size\n");
+      return -1;
+    }
+    join_kernel(atoi(argv[1]), atoi(argv[2]));
   }
 
   return 0;
@@ -27,11 +34,6 @@ int main(int argc, char **argv) {
     return -1;
   }
 
-  if (strcmp(argv[1], "ub") == 0) {
-    run_microbenchmark(argc - 2, argv + 2);
-  } else {
-    printf("Wrong benchmark id. Usage: dbkeys <benchmark_id> <params>\n");
-  }
-
+  run_microbenchmark(argc - 1, argv + 1);
   return 0;
 }

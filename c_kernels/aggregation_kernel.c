@@ -6,21 +6,7 @@
 #include "../common/time.h"
 #include "../common/structs.h"
 #include "../common/macros.h"
-
-#define INT32_T_MAX 2147483647
-#define min(a, b) (((a)<(b))?(a):(b))
-
-void init_rando_gen() {
-  srand(42 /* magic constant */);
-}
-
-int uar_gen() {
-  return (rand() % (INT32_T_MAX));
-}
-
-int uar_gen_range(int min, int max) {
-  return (rand() % (max + 1 - min) + min);
-}
+#include "../common/data_generators.h"
 
 void generate_agg_date(int input_size, int no_unique_groups,
                        vector_int *group_column, vector_int *sum_column) {
