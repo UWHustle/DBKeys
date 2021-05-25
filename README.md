@@ -146,4 +146,4 @@ Both FA and DA columns are 32 bit integers.
 - Discuss how to do verification of results
 
 ## References
-[1] [Castle Paper] (http://pages.cs.wisc.edu/~chronis/files/castle_extended.pdf)
+[Castle Paper](http://pages.cs.wisc.edu/~chronis/files/castle_extended.pdf)
