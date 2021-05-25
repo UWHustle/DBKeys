@@ -8,7 +8,7 @@ performance.
 Databases answer user submitted queries. Queries are decomposed into a limited 
 set of well defined operators (i.e. filter, aggregation, join). Each of the 
 core operators follows a different processing pattern. Database operators are 
-defined at a logical level. There are multiple implementation for each
+defined at a logical level. There are multiple implementations for each
 operator (i.e. for a cpu: hash based or sort based). The best implementation 
 depends on the data (size, distribution) and query at hand but also the 
 performance characteristics of the hardware. 
@@ -31,7 +31,7 @@ performance we can achieve today. A single thread implementation of an operator
 
 - Hardware trends dictate the need for novel architectures following 
 new processing paradigms. We present a set of interesting approaches.
-- Experimental and theoritical evaluation of novel architectures (and processing 
+- Experimental and theoretical  evaluation of novel architectures (and processing 
 paradigms) for the core database operators. Present how to map database 
 operators to each architecture and what are the benefits/limitations.
 -  Investigate a collaborative approach where multiple technologies are 
