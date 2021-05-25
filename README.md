@@ -2,15 +2,15 @@
 
 A collection of database benchmarks and micro-benchmarks. This project will evolve in a test-harness, that defines a set of desired micro-benchmarks. Each benchmark is defined by its input and output. The test-harness provides the input to each competitor, times the executions and verifies the produced output.
 
-## Code Usage
+# Code Usage
 ```
 make 
 ./dbkeys <benchmark id> <params>
 ```
 
-## Micro-Benchmarks
+# Micro-Benchmarks
 
-### Aggregation
+## Aggregation
 ```
 SELECT G, SUM(S)
 FROM table
@@ -52,7 +52,7 @@ GROUP BY Major
 | Input Size       |   > 0             |
 | #Unique Groups   |   [1, Input Size] |
 
-#### What are good ranges for the aggregation parameters?
+### What are good ranges for the aggregation parameters?
 
 Input Size: [10^4, 10^9] rows
 
@@ -77,7 +77,7 @@ Execute the aggregation microbenchmark:
 ./dbkeys agg <input_size> <no_unique_groups>
 ```
 
-### Join
+## Join
 ```
 SELECT *
 FROM fact, dimension
@@ -128,7 +128,7 @@ Execute the join microbenchmark:
 The fact table is usually many times larger that a dimension table (1:12 ratio).
 Each row of the fact table matches to one row of the dimension table (pk-fk join).
 
-#### What are good ranges for the join parameters?
+### What are good ranges for the join parameters?
 
 Fact Size: [10^5 - 10^9] rows
 
