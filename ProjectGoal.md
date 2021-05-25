@@ -9,9 +9,9 @@ Databases answer user submitted queries. Queries are decomposed into a limited
 set of well defined operators (i.e. filter, aggregation, join). Each of the 
 core operators follows a different processing pattern. Database operators are 
 defined at a logical level. There are multiple implementation for each
-operator (i.e. hash based, sort based). The best implementation depends on the
-data and qeuery at hand but also the performance characteristics of 
-the hardware. 
+operator (i.e. for a cpu: hash based or sort based). The best implementation 
+depends on the data (size, distribution) and query at hand but also the 
+performance characteristics of the hardware. 
 
 Understanding the performance we can achieve for each operator for each PIM
 device is the first step. The insights gained from this study will inform our 
@@ -30,7 +30,7 @@ performance we can achieve today. A single thread implementation of an operator
 ### Paper Sketch
 
 - Hardware trends dictate the need for novel architectures following 
-new processing paradigms. Present a set of interesting approaches.
+new processing paradigms. We present a set of interesting approaches.
 - Experimental and theoritical evaluation of novel architectures (and processing 
 paradigms) for the core database operators. Present how to map database 
 operators to each architecture and what are the benefits/limitations.
